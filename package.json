@@ -1,14 +1,38 @@
 {
-  "name": "bot-disc",
-  "version": "1.0.0",
-  "description": "Discord bot para TechHub",
+  "name": "techhub-discord-bot",
+  "version": "2.0.0",
+  "description": "Bot profissional para o servidor TechHub com sistema escalável de comandos e interações",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "deploy": "node deploy-commands.js",
+    "dev": "node index.js",
+    "pm2:start": "pm2 start index.js --name techhub-bot",
+    "pm2:stop": "pm2 stop techhub-bot",
+    "pm2:restart": "pm2 restart techhub-bot",
+    "pm2:logs": "pm2 logs techhub-bot"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "discord.js",
+    "techhub",
+    "windows",
+    "optimization"
+  ],
+  "author": "TechHub",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
   },
   "dependencies": {
     "archiver": "^7.0.1",
     "discord.js": "^14.17.3",
     "dotenv": "^16.4.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seu-usuario/bot-disc"
   }
 }
