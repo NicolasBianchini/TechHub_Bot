@@ -1,5 +1,14 @@
 {
+  "name": "bot-disc",
+  "version": "1.0.0",
+  "description": "Discord bot para TechHub",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
-    "archiver": "^7.0.1"
+    "archiver": "^7.0.1",
+    "discord.js": "^14.17.3",
+    "dotenv": "^16.4.7"
   }
 }
