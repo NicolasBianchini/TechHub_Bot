@@ -11,7 +11,8 @@ module.exports = {
         WARNING: 0xFFC000,
         DANGER: 0xC00000,
         INFO: 0x3498DB,
-        SECONDARY: 0x7289DA
+        SECONDARY: 0x7289DA,
+        NVIDIA: 0x76B900
     },
 
     // Emojis padronizados
@@ -67,5 +68,21 @@ module.exports = {
         DELETE_TEMP_FILE: 5000,
         INTERACTION_TIMEOUT: 15000,
         CACHE_CLEANUP: 300000 // 5 minutos
+    },
+
+    // Módulos NVIDIA
+    NVIDIA_MODULES: {
+        GERAL: {
+            name: 'Configurações Gerais',
+            emoji: '⚡',
+            color: 0x00B050,
+            description: 'Otimize FPS e reduza latência'
+        },
+        CORES: {
+            name: 'Configurações de Cores',
+            emoji: '🎨',
+            color: 0x0078D7,
+            description: 'Melhor qualidade visual'
+        }
     }
 };
