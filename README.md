@@ -9,13 +9,15 @@ bot-disc/
 ├── commands/              # Slash commands do Discord
 │   ├── iso.js            # Comando /iso
 │   ├── otimizacao.js     # Comando /otimizacao
-│   └── extensoes.js      # Comando /extensoes
+│   ├── extensoes.js      # Comando /extensoes
+│   └── nvidia.js         # Comando /nvidia
 │
 ├── interactions/          # Handlers de interações (botões, menus)
 │   ├── index.js          # Sistema de carregamento automático
 │   ├── iso.js            # Handlers para /iso
 │   ├── otimizacao.js     # Handlers para /otimizacao
-│   └── extensoes.js      # Handlers para /extensoes
+│   ├── extensoes.js      # Handlers para /extensoes
+│   └── nvidia.js         # Handlers para /nvidia
 │
 ├── data/                  # Dados e configurações
 │   ├── extensions.js     # Base de extensões do Chrome
@@ -28,7 +30,10 @@ bot-disc/
 │   └── avancado.ps1
 │
 ├── utils/                 # Utilitários e constantes
-│   └── constants.js      # Constantes globais
+│   ├── constants.js      # Constantes globais
+│   └── images/           # Imagens para guias
+│       ├── config-fps/   # Prints de configurações NVIDIA (FPS)
+│       └── config-colors/ # Prints de configurações NVIDIA (cores)
 │
 ├── .env                   # Variáveis de ambiente
 ├── index.js              # Arquivo principal do bot
@@ -95,6 +100,18 @@ Extensões recomendadas para Chrome, organizadas por categorias.
 - ⚡ **Produtividade**: Vimium, OneTab, Dark Reader, etc.
 - 👨‍💻 **Desenvolvedor**: React DevTools, Vue DevTools, etc.
 - 🔧 **Ferramentas**: Grammarly, Google Translate, etc.
+
+### `/nvidia`
+Guia completo de otimização para placas de vídeo NVIDIA com prints passo a passo.
+
+**Módulos:**
+- ⚡ **Configurações Gerais**: Otimize FPS e reduza latência (7 passos sequenciais)
+- 🎨 **Configurações de Cores**: Melhore qualidade visual do painel de controle
+
+**Recursos:**
+- Guias visuais com prints das configurações
+- Envio sequencial de imagens para fácil compreensão
+- Instruções detalhadas para cada passo
 
 ## 🏗️ Arquitetura
 
